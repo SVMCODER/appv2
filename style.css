@@ -1,0 +1,153 @@
+
+html,body {
+	outline-color: #a5b4fc;
+	height: 94%;
+	margin: 0;
+	
+  }
+body {
+  outline-color: #a5b4fc;
+  background-color: #f9fbfd;
+  color: black;
+}
+
+.tab-nav-container{
+	color: rgb(0, 0, 0);
+	background-color: #ffffff;
+	box-shadow: 0 3px 6px rgb(255, 255, 255), 0 3px 6px rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0.3em 1em;
+  border-top: 0.2px solid rgb(199, 199, 199);
+}
+
+.tab{
+	background: #ffffff;
+	color: rgb(0, 0, 0);
+	border-radius:50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	padding: 20px 20px;
+	margin: 0 10px;
+	font-size: 1em;
+	transition: background 0.4 linear;
+}
+
+.tab i{
+	font-size: 1em;
+}
+
+.tab p{
+	font-weight:bold;
+	overflow: hidden;
+	max-width:0;
+}
+
+.tab.active p{
+	overflow: hidden;
+}
+.tab.active.purple{
+	background-color: #6366f1;
+	color: rgb(255, 255, 255);
+}
+.tab.active.yellow{
+	background-color: rgba(230, 169, 25, 0.2);
+	color: rgba(230, 169, 25, 1);
+}
+.tab.active.teal{
+	background-color: rgba(28, 150, 162, 0.2);
+	color: rgba(28, 150, 162, 1);
+}
+
+@media (max-width: 450px){
+	.tab-nav-container{
+		padding: 5px;
+	}
+	
+	.tab {
+		padding: 0.5em 1em;
+		margin: 0;
+	}
+	
+	.tab i{
+		font-size: 1em;
+	}
+}
+button {
+	width: 80%;
+	border: none;
+	padding: 8px 0;
+	margin: 24px 0;
+	border-radius: 4px;
+	background-color: #6366f1;
+	color: #ffffff;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+.container {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	background-color: #ffffff;
+	width: fit-content;
+	height: auto;
+	width: 80%;
+	color: rgb(0, 0, 0);
+	padding: 0.6em 1em;
+	border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #6366f1, 
+      #6366f1
+    ) 1 100%;
+}
+.head{
+		color: rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+		display: flex;
+	  position: fixed;
+	  border-bottom: 0.2px solid rgb(224, 224, 224) ;
+	  justify-content: space-between;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	  padding: 0.1em 1em;
+}
+.right {
+	float: right;
+	padding: 0em 1.5em;
+}
+img {
+	width: 50%;
+	height: auto;
+}
+input {
+	padding: 0.6em 1em;
+	outline-color: #a5b4fc;
+}
+option{
+	padding: 0.4em 0.8em;
+}
+
+select {
+	padding: 0.4em 0.6em;
+	background-color:#6366f1;
+	color: white;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+#error {
+	color: red;
+}
+.bottomtext {
+	color: grey;
+	bottom: 0;
+}

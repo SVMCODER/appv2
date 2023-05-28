@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SVM CODER HUB | PORTAL</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="signup-form">
+        <div class="container">
+          <div class="header">
+            <h1>SVM CODER HUB</h1>
+            <p>Sign Up to our portal.</p>
+          </div>
+            <div class="input">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="username" placeholder="Username" required/>
+            </div>
+            <div class="input">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" required/>
+            </div>
+            <div class="input">
+              <i class="fa-solid fa-address-card"></i>
+              <input type="number" id="admno" placeholder="Admission Number" required/>
+            </div>
+            <div class="input">
+              <i class="fa-solid fa-male"></i>
+              <input type="text" id="frname" placeholder="Father's Name" required/>
+            </div>
+            <div class="input">
+              <i class="fa-solid fa-female"></i>
+              <input type="text" id="mrname" placeholder="Mother's Name" required/>
+            </div>
+            <input class="signup-btn" type="submit" value="SIGN UP" onclick="login()" />
+        </div>
+      </div>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline-color: #a5b4fc;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #e2e8f0;
+}
+
+p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.signup-form {
+  width: auto;
+  padding: 24px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 8px #6b728040;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  font-weight: bolder;
+  font-size: 28px;
+  color: #6366f1;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-size: 16px;
+}
+
+.input input::placeholder {
+  color: #6b7280;
+}
+
+.input i {
+  top: 50%;
+  width: 36px;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.signup-btn {
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  margin: 24px 0;
+  border-radius: 4px;
+  background-color: #6366f1;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:active {
+  background-color: #4f46e5;
+  transition: all 0.3s ease;
+}
+</style>
+<script src="index.js"></script>
+</body>
+</html>

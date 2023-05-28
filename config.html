@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SVM CODER HUB | PORTAL HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="tab-nav-container">
+    <div class="tab " onclick="window.location.replace('home.html')">
+      <i class='bx bxs-home'></i>
+      <p></p>
+    </div>
+    <div class="tab active purple">
+      <i class='bx bx-notepad'></i>
+      <p></p>
+    </div>
+    <div class="tab" onclick="window.location.replace('news.html')">
+      <i class='bx bxs-news'></i>
+      <p></p>
+    </div>
+    <div class="tab" onclick="window.location.replace('projects.html')">
+      <i class='bx bx-heart' ></i>
+      <p></p>
+    </div>
+    <div class="tab" onclick="window.location.replace('profile.html')">
+      <i class='bx bx-user' ></i>
+      <p></p>
+    </div>
+  </div>
+  <div class="head">
+    <h3>SVM CODER HUB</h3>
+    <h3 class="right" onclick="logout()"><i class='bx bxs-user-circle'></i><i class='bx bx-log-out' ></i></h3>
+  </div>
+  <br><br><br> <br><br><br>
+  <h3 align="center" >Create a Project</h3>
+<div align="center">
+  <div class="container" align="center">
+    <img src="https://cdn.dribbble.com/users/740188/screenshots/11467544/media/c767c489d2ee39590d36a5234c5eaedc.gif" alt="">
+    <h3>Project Information</h3>
+    
+    Language
+    <select name="" id="lang">
+      <option value="aio">HTML, CSS, JS</option>
+    </select><br><br>
+    <input type="text" name="" placeholder="Project Name" id="pname"><br><br>
+    <input type="text" name="" placeholder="File Name" id="fname"><br>
+    <div id="error"></div>
+    <button class="bx bx-plus" onclick="create()"> Create</button>
+  </div><br>
+<br><br><br>
+<script>
+  if(localStorage.getItem('loggedin') != 'yes') {
+    window.location.replace('/')
+  }
+  document.getElementById('name').innerHTML = 'Hello, ' + localStorage.getItem('name')
+</script>
+<script src="app.js"></script>
+</body>
+</html>
